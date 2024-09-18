@@ -118,13 +118,13 @@ if team:
             st.write("### Regular Penalties:")
             for index, row in regular_penalties.iterrows():
                 outcome = "Scored" if row['shot_outcome'] == 'Goal' else "Missed"
-                st.write(f"Player: {row['player']}, Minute: {row['minute']}, Outcome: {outcome}")
+                st.write(f"Player: **{row['player']}, Minute: {row['minute']}, Outcome: {outcome}")
 
         if not shootout_penalties.empty:
             st.write("### Shootout Penalties:")
             for index, row in shootout_penalties.iterrows():
                 outcome = "Scored" if row['shot_outcome'] == 'Goal' else "Missed"
-                st.write(f"Player: {row['player']}, Outcome: {outcome}")
+                st.write(f"Player: **{row['player']}**, Outcome: **{outcome}**")
 else:
     st.write("Please select a team and player to view the data.")
 
