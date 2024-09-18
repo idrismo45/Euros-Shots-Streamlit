@@ -30,8 +30,8 @@ if team:
 
     filtered_df = filter_data(df, team, player)
 
-    # Pitch setup
-    pitch = VerticalPitch(pitch_type='statsbomb', line_zorder=2, pitch_color='#f0f0f0', line_color='black', half=True)
+    # Pitch setup with natural green color and white lines
+    pitch = VerticalPitch(pitch_type='statsbomb', line_zorder=2, pitch_color='green', line_color='white', half=True)
     fig, ax = pitch.draw(figsize=(12, 7))
 
     def plot_shots(df, ax, pitch):
@@ -122,3 +122,4 @@ if team:
                 st.write(f"Player: {row['player']}, Outcome: {outcome}")
 else:
     st.write("Please select a team and player to view the data.")
+
