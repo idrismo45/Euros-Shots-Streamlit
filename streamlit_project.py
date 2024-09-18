@@ -5,9 +5,10 @@ from mplsoccer import VerticalPitch
 import matplotlib.pyplot as plt
 import matplotlib.patches as patches
 
-# Streamlit App Title and Subheader
-st.title("Euros 2024 Shot Map")
-st.subheader("Filter to any team/player to see all their shots taken!")
+# Streamlit App Title and Logo
+st.image('logo.jpg', width=150)  # Add the Euros logo
+st.markdown("<h1 style='text-align: center; color: blue;'>Euros 2024 Shot Map</h1>", unsafe_allow_html=True)
+st.markdown("<h2 style='text-align: center; color: gray;'>Filter to any team/player to see all their shots taken!</h2>", unsafe_allow_html=True)
 
 # Load the data
 df = pd.read_csv('euros_2024_shot_map.csv')
@@ -91,7 +92,7 @@ if team:
     legend_elements = [patches.Patch(color=color, label=label) for color, label in color_labels.items() if color in used_colors]
 
     # Create an inset axis for the legend
-    legend_ax = fig.add_axes([0.82, 0.1, 0.15, 0.8])  # Adjust these values as needed
+    legend_ax = fig.add_axes([0.85, 0.15, 0.1, 0.7])  # Adjust these values as needed
     legend_ax.legend(handles=legend_elements, loc='center left', bbox_to_anchor=(1, 0.5))
     legend_ax.axis('off')  # Turn off axis for the legend
 
