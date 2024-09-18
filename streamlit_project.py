@@ -31,7 +31,7 @@ if team:
     filtered_df = filter_data(df, team, player)
 
     # Pitch setup with natural green color and white lines
-    pitch = VerticalPitch(pitch_color='grass', line_color='white', stripe=True, half=True)
+    pitch = VerticalPitch(pitch_color='#aabb97', line_color='white', stripe_color='#c2d59d', stripe=True, half=True)
     fig, ax = pitch.draw(figsize=(12, 7))
 
     # Manually set pitch and line colors
