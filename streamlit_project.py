@@ -31,8 +31,13 @@ if team:
     filtered_df = filter_data(df, team, player)
 
     # Pitch setup with natural green color and white lines
-    pitch = VerticalPitch(pitch_type='statsbomb', line_zorder=2, pitch_color='green', line_color='white', half=True)
+    pitch = VerticalPitch(pitch_type='statsbomb', line_zorder=2, half=True)
     fig, ax = pitch.draw(figsize=(12, 7))
+
+    # Manually set pitch and line colors
+    ax.set_facecolor('green')  # Set pitch color
+    for spine in ax.spines.values():
+        spine.set_edgecolor('white')  # Set line color
 
     def plot_shots(df, ax, pitch):
         # Track which colors are used
@@ -122,4 +127,5 @@ if team:
                 st.write(f"Player: {row['player']}, Outcome: {outcome}")
 else:
     st.write("Please select a team and player to view the data.")
+
 
