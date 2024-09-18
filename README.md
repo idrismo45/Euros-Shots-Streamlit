@@ -1,3 +1,3 @@
 # streamlit-euro
 
-(logo.png)
+![Euro Logo](logo.png)
