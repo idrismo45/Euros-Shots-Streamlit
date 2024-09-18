@@ -1,2 +1,3 @@
-# streamlit-euros
-![logo.jpg]
+# streamlit-euro
+
+(logo.png)
