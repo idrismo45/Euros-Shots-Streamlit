@@ -2,7 +2,7 @@
 
 # Euros 2024 Player Shot Map Dashboard
 
-![Logo](Logo.svg.png)
+![Logo](Logo1.jpg)
 
 ## Overview
 
