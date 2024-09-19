@@ -1,3 +1,3 @@
 # Euros 2024 Shot Map
 
-[Gif]!(euro.gif)
+![Streamlit gif](euro.gif)
