@@ -19,7 +19,7 @@ The **Euros 2024 Player Shot Map Dashboard** is a dynamic visualisation tool bui
 
 The shot data used in this project comes from the Euros 2024 tournament, focusing on team and player performances across all matches.
 
-## Visualization Preview
+## Visualisation Preview
 
 Here's a quick preview of the Streamlit app in action:
 
