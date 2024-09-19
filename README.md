@@ -1,3 +1,3 @@
-# Euros 2024 Shot Map
+# Euros 2024 Player Shot Map Dashboard
 
 ![Streamlit gif](logo.jpg)
